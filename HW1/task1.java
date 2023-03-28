@@ -14,26 +14,26 @@ import java.util.Scanner;
 
 public class task1 {
     
-  public static int cubed(int n){
-    int[] arr = new int[1000];
-    for(int i = 1; i < 1000; i++){
-      arr[i] = i*i*i;
-    }
+    public static int cubed(int n){
+        int[] arr = new int[1000];
+        for(int i = 1; i < 1000; i++){
+            arr[i] = i*i*i;
+        }
     return arr[n];
-  }
+    }
   
-  public static void main(String[] args) {
+    public static void main(String[] args) {
       
-    Scanner iScanner = new Scanner(System.in);
-    System.out.printf("Введите первое число:");
-    int num1 = iScanner.nextInt();
-    System.out.printf("Введите второе число:");
-    int num2 = iScanner.nextInt();
+        Scanner iScanner = new Scanner(System.in);
+        System.out.printf("Введите первое число:");
+        int num1 = iScanner.nextInt();
+        System.out.printf("Введите второе число:");
+        int num2 = iScanner.nextInt();
 
-    System.out.printf("Куб первого числа:");
-    System.out.println(cubed(num1));
-    System.out.printf("Куб второго числа:");
-    System.out.println(cubed(num2));
+        System.out.printf("Куб первого числа:");
+        System.out.println(cubed(num1));
+        System.out.printf("Куб второго числа:");
+        System.out.println(cubed(num2));
     
-  }
+    }
 }
