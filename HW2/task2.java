@@ -40,18 +40,22 @@ public class task2 {
         book = book.toLowerCase();
 
         System.out.println("enter m:");
+        //количество аллергенов
         int m = scan.nextInt();
         scan.nextLine();
+        // массив, в котором будет храниться разбитая сплитом введенная строка "аллерген - замена"
+        // первый элемент в этом массиве будет аллерген, второй тире, третий продукт замена 
         String[] words = new String[3];
         for(int i = 0; i < m; i++){
             System.out.println("enter m strings:");
             words = scan.nextLine().split(" ");
-            book = book.replaceAll(words[0], words[2]);
+            book = book.replaceAll(words[0], words[2]); //заменяем в рецепте слова, соответствующие аллергену на замену
         }
-        book = Character.toUpperCase(book.charAt(0)) + book.substring(1); 
+        // Переводим в верхний регистр те буквы в тексте, которые должны быть заглавными.
+        book = Character.toUpperCase(book.charAt(0)) + book.substring(1); // Перевод в верхн регистр первой буквы текста 
         for(int i = 1; i < book.length() - 1; i++){
-            if((book.charAt(i) == '.') && ((i + 3) < book.length())){
-                book = book.substring(0,i+2) + Character.toUpperCase(book.charAt(i+2)) + book.substring(i+3);
+            if((book.charAt(i) == '.') && ((i + 3) < book.length())){ //находим точку в тексте, без учета последней точки
+                book = book.substring(0,i+2) + Character.toUpperCase(book.charAt(i+2)) + book.substring(i+3); // перевод в верхн регистр символа после точки и  после пробела (i+2) 
             }
         } 
         System.out.println(book);
