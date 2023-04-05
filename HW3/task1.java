@@ -5,33 +5,22 @@ public class task1 {
         System.out.println("Исходный массив:");
         int[] arr = {12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, -1};
         System.out.println(Arrays.toString(arr));
-        //printArr(arr);
 
         System.out.println("Сортировка слиянием:");
         arr = mergeSort(arr);
         System.out.println(Arrays.toString(arr));
-        //printArr(arr);
 
         System.out.println("----------------------");
 
         int[] arr2 = {12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, -1};
         System.out.println("Исходный массив:");
         System.out.println(Arrays.toString(arr2));
-        //printArr(arr2);
-
+    
         arr2 = selectSort(arr2);
         System.out.println("Сортировка выборкой:");
         System.out.println(Arrays.toString(arr2));
-        //printArr(arr2); 
-
     }
 
-    // public static void printArr(int[] arr){
-    //     for(int i = 0; i < arr.length; i++){
-    //         System.out.print(arr[i] + " ");
-    //     }
-    //     System.out.println(); 
-    // }
     public static int[] mergeSort(int[] arr) {
         if(arr.length > 1){
             int [] l = new int[arr.length / 2];
