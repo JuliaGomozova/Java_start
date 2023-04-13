@@ -17,7 +17,6 @@ public static String shuffle(final String s, final int[] index){
     char[] charArray = new char[s.length()];
     
     for(int i = 0; i < s.length(); i ++){
-
         charArray[index[i]-1] = s.charAt(i);
     }
     String result = new String(charArray);

@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class task1 {
     public static void main(String[] args) {
         System.out.println("Исходный массив:");
-        int[] arr = {12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, -1};
+        int[] arr = {12, 11, 10, 9, 4, 8, 7, 6, 5, 4, 3, 2, 1, -1};
         System.out.println(Arrays.toString(arr));
 
         System.out.println("Сортировка слиянием:");
@@ -12,7 +12,7 @@ public class task1 {
 
         System.out.println("----------------------");
 
-        int[] arr2 = {12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, -1};
+        int[] arr2 = {12, 11, 10, 4, 9, 8, 7, 6, 5, 4, 3, 2, 1, -1};
         System.out.println("Исходный массив:");
         System.out.println(Arrays.toString(arr2));
     
